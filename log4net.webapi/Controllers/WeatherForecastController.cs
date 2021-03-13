@@ -26,7 +26,10 @@ namespace log4net.webapi.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("Get() called");
             var rng = new Random();
+            _logger.LogDebug("Random object was created");
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
