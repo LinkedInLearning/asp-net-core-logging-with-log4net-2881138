@@ -9,4 +9,10 @@
     <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
