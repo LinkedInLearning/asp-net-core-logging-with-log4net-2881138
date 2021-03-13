@@ -28,7 +28,7 @@ namespace log4net.webapi.Controllers
         {
             _logger.LogInformation("Get() called");
             var rng = new Random();
-            _logger.LogDebug("Random object was created");
+            _logger.LogInformation("Random object was created");
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
