@@ -17,6 +17,7 @@ namespace log4net.console
             Console.WriteLine("Hello World!");
 
             log.Info("This is info");
+            log.Debug("This is debug");
             log.Error("This is error");
             log.Warn("This is warn");
             log.Fatal("This is fatal");
