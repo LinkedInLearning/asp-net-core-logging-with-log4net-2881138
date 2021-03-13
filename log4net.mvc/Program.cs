@@ -21,6 +21,10 @@ namespace log4net.mvc
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                }).ConfigureLogging(builder => 
+                {
+                    builder.SetMinimumLevel(LogLevel.Information);
+                    builder.AddLog4Net("log4net.config");
                 });
     }
 }
