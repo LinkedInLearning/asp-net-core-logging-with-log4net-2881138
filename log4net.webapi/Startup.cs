@@ -1,3 +1,4 @@
+using log4net.webapi.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -43,6 +44,8 @@ namespace log4net.webapi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "log4net.webapi v1"));
             }
+
+            app.ConfigureBuildInExceptionHandler();
 
             app.UseHttpsRedirection();
 
