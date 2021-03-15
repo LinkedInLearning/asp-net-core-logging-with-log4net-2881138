@@ -35,6 +35,9 @@ namespace log4net.mvc.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+            var data = HttpContext.Request.Headers["LogData"];
+            _logger.LogError(data);
+
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
