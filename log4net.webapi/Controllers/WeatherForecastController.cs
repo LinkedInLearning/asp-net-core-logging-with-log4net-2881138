@@ -26,9 +26,11 @@ namespace log4net.webapi.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            _logger.LogInformation("Get() called");
+            //_logger.LogInformation("Get() called");
             var rng = new Random();
-            _logger.LogInformation("Random object was created");
+            //_logger.LogInformation("Random object was created");
+
+            throw new Exception("This is a test exception from GET()");
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

@@ -36,7 +36,7 @@ namespace log4net.webapi
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -45,7 +45,7 @@ namespace log4net.webapi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "log4net.webapi v1"));
             }
 
-            app.ConfigureBuildInExceptionHandler();
+            app.ConfigureBuildInExceptionHandler(loggerFactory);
 
             app.UseHttpsRedirection();
 
