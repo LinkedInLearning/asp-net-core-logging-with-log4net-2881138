@@ -20,14 +20,15 @@ namespace log4net.mvc.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogWarning("This is a warning from Index()");
-            _logger.LogInformation("This is an information from Index()");
-            _logger.LogDebug("This is a debug from Index()");
+            //_logger.LogWarning("This is a warning from Index()");
+            //_logger.LogInformation("This is an information from Index()");
+            //_logger.LogDebug("This is a debug from Index()");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            throw new Exception("An exception was thrown at Privace()");
             return View();
         }
 
