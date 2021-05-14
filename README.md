@@ -1,7 +1,7 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# ASP.NET Core: Logging with Log4Net
+This is the repository for the LinkedIn Learning course ASP.NET Core: Logging with Log4Net. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url] 
+Logging frameworks like log4net can help standardize and streamline the process of event logging: helping developers control which events are output and where to output them. This course teaches a real-world, project-based approach to event logging for ASP.NET Core applications with log4net. Instructor Ervis Trupja explains the benefits of using a logging framework and the options available to you. He then shows how to set up the log4net framework for console, web API and MVC apps, and how to log to different mediums: a regular log file, a rolling file, and a SQL database. Plus, learn how to create a custom exception handler and configure it in the middleware to log exceptions globally.
 
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
