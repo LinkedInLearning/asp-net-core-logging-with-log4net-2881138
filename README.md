@@ -31,5 +31,5 @@ _Full-Stack .NET Web Developer with a mathematical background_
 
 Check out some of my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ervis-trupja).
 
-[lil-course-url]: https://www.linkedin.com/learning/asp-dot-net-core-communication-management
+[lil-course-url]: https://www.linkedin.com/learning/asp-dot-net-core-logging-with-log4net
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2881138/2881138-1620938355577-16x9.jpg
